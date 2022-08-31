@@ -100,6 +100,7 @@ header nav li a{
     margin-top: 150px;
     display: flex;
     align-items: center;
+   
 
 }
 .hero-section .hero-inner .column-left{
@@ -146,9 +147,11 @@ color: #21243D;
 
 .hero-section .hero-inner .column-right{
     flex: 1;
-    display: flex;
-justify-content: flex-end;
+    display:flex;
+    justify-content: flex-end;
     align-items: center;
+   
+    
 }
 .post-section{
     background-color: #EDF7FA;  
@@ -325,4 +328,30 @@ text-align: center;
 
 color: #21243D;
 
+background: #FFFFFF;
+
+
+}
+
+@media all and(max-width:600px){
+    header nav{
+            background-color: red;
+    }
+}
+.hero-section .hero-inner{
+    flex-direction: column-reverse  ;
+}
+
+.hero-section .column-right{
+    margin-bottom: 30px;
+    
+}
+.hero-section .column-left{
+    text-align: center;
+    margin: 0 20px;
+
+}
+.hero-section .column-left .action-button{
+    margin-right: auto;
+    margin-left: auto;
 }
